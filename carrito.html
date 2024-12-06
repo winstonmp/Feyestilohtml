@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <script src="app.js" async></script>
+    <title>Tienda  </title>
+    <!--iconos-->
+    <link rel="apple-touch-icon" href="assets/img/">
+    
+    <!-- archivos css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+</head>
+<body>
+    <header>
+         <!-- Inicio del encabezado-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
+      <div class="container text-light">
+          <div class="w-100 d-flex justify_content-between">
+              <div>
+                  <i class="fa fa-envelope mx-2"></i>
+                  <a class="navbar-sm-brand text-light text-decoration-none"
+                      href="mailto:anyago@hotmail.com">winstonmencop@mail.com</a>
+                  <i class="fa fa-phone mx-2"></i>
+                  <a class="navbar-sm-brand text-light text-decoration-none"
+                      href="tel: 057-320-029-09-08">57-3146491155</a>
+              </div>
+              <div>
+                  <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                          class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                  <a class="text-light" href="https://www.instagram.com" target="_blank"><i
+                          class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                  <a class="text-light" href="https://www.twiter.com" target="_blank"><i
+                          class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!-- Fin del encabezado-->
+
+
+  <!--Inicio menu-->
+  <!-- Header -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow" id="CN">
+      <div class="container d-flex justify_content-between align-items-center"> 
+          <a href="index.html"><img src="assets/img/logo (2).png" style="width: 100px;" alt=""></a>
+          <!-- Fecha -->
+          
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+              data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify_content-lg-between"
+              id="templatemo_main_nav">
+              <div class="flex-fill">
+                  <ul class="nav navbar-nav d-flex justify_content-between mx-lg-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Inico</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="compras.html">Camisetas Estampadas</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="acercade.html">Acerca de</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="navbar align-self-center d-flex">
+                  <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-sm-auto pr-3">
+                      <div class="input-group">
+                          <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar....">
+                          <div class="input-group-text">
+                              <i class="fa fa-fw fa-search"></i>
+
+                          </div>
+                      </div>
+                  </div>
+                  <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                      data-bs-target="templatetemo-search">
+                      <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                  </a>
+                  <a class="nav-icon position-relative text-decoration-none" href="carrito.html">
+                      <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                      <span id="carrito-value"
+                          class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light"></span>
+                  </a>
+                  <a class="nav-icon position-relative text-decoration-none" href="#">
+                      <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                      <span id="contador"
+                          class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                  </a>
+                  <div id="fecha1">
+                  <script>
+                      var f = new Date();
+                      document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear())
+                  </script>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+  <!--Fin de menu-->
+     </header>
+
+
+     <section class="contenedor">
+
+
+
+        
+       <!-- contenedor de elementos -->
+       <div class="contenedor-items">
+         <div class="item">
+           <span class="titulo-item" style="color: black;">BIANCHI BARRA CHOCOLATE </span>
+           <img src="imagenes/bianchi.chocolate.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$12.000 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">BIANCHI BARRA CHOCOLATE BLANCO </span>
+           <img src="imagenes/bianchi.chocolate.blanco.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$12.000 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">CHAO </span>
+           <img src="imagenes/chao.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$8.600 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">CHAO FRESA </span>
+           <img src="imagenes/chao.fresa.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$8.600 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">FRUWI </span>
+           <img src="imagenes/fruwi.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$9.400 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;"> LOKIÑO BARRA </span>
+           <img src="imagenes/lokiño.barra.webp" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$4.500 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">OKA LOKA </span>
+           <img src="imagenes/oka.loka.jpeg" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$7.600 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   
+         <div class="item">
+           <span class="titulo-item" style="color: black;">TUMIX </span>
+           <img src="imagenes/tumix.jpg" alt="" class="img-item">
+           <span class="precio-item" style="color: black;">$6.500 COP</span>
+           <button class="boton-item">Agregar al Carrito</button>
+         </div>
+   </div>
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                
+                <!-- <div class="carrito-item">
+                    <img src="imagenes/falcao.jpg" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">C. Retro de Falcao A. de Madrid</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$92.900,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="imagenes/rooney.jpg" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">C. Retro de Rooney Man. United</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$84.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div> -->
+                
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong style="color: black;">Tu Total</strong>
+                    <span class="carrito-precio-total" style="color: black;">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

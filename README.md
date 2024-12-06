@@ -1,2 +1,2 @@
-# Feyestilohtml
-Venta de camisetas y gorras 
+# proyectoEtraining
+tienda ecommerce para productos artesanales

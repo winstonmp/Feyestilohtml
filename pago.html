@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago</title>
+        <!-- css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/templatemo.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<style>
+    .payment-form{
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background-color: rgb(231, 232, 232);
+        border-radius: 8px;
+        box-shadow: 0 2px 10pc rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify_content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="mailto:anyago@hotmail.com">winstonmencop@mail.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none"
+                        href="tel: 057-320-029-09-08">57-3146491155</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com" target="_blank"><i
+                            class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.twiter.com" target="_blank"><i
+                            class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin del encabezado-->
+
+
+    <!--Inicio menu-->
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow" id="CN">
+        <div class="container d-flex justify_content-between align-items-center"> 
+            <a href="index.html"><img src="assets/img/logo (2).png" style="width: 100px;" alt=""></a>
+            <!-- Fecha -->
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify_content-lg-between"
+                id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify_content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="compras.html">Camisetas Estampadas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="acercade.html">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar....">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal"
+                        data-bs-target="templatetemo-search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="compras.html">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span id="carrito-value"
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light"></span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span id="contador"
+                            class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a>
+                    <div id="fecha1">
+                    <script>
+                        var f = new Date();
+                        document.write(f.getDate() + "/" + (f.getMonth() + 1) + "/" + f.getFullYear())
+                    </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="payment-form">
+        <h1 class="h4 mb-4 text-center">Datos de Pago</h1>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="card-number">Número de Tarjeta</label>
+                <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Fecha de expiración (MM/AA)</label>
+                <input type="text" class="form-control" id="expiry-date" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" class="form-control" id="cvc" placeholder="123" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>
