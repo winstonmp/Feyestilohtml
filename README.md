@@ -1,2 +1,2 @@
 # Feyestilohtml
-Venta e camisetas y gorras 
+Venta de camisetas y gorras 
